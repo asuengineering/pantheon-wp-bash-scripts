@@ -26,7 +26,8 @@ THEMEFILE="themereport-$NOW.csv"
 # SITENAMES="$(terminus org:site:list asu-engineering --tag="schools" --field="name")"
 # SITENAMES="site1 site-two site-three"
 
-SITENAMES="$(terminus org:site:list asu-engineering --field="name")"
+# SITENAMES="$(terminus org:site:list asu-engineering --field="name")"
+SITENAMES="fse-site-setup poly-fsdt"
 
 # Indicate which environments you want the script to include.
 # TODO: 
@@ -34,12 +35,16 @@ SITENAMES="$(terminus org:site:list asu-engineering --field="name")"
 #  - could create an additional loop that could catch multidev environments + dev/test/live.
 #  - also avoids errors due to environments not being initialized yet.
 
-SITEENVS="dev live"
+SITEENVS="live"
 
 # Counting the number of iterations in the whole script.
 SITECOUNT=($SITENAMES)
 SITEENVCOUNT=($SITEENVS)
 echo "Getting information about ${#SITECOUNT[@]} sites and ${#SITEENVCOUNT[@]} environments."
+
+# Preload PLUGREPORT and THEMEREPORT with the correct CSV title rows.
+PLUGREPORT="site,environment,plugin-name,status,update,version\n"
+THEMEREPORT="site,environment,theme-name,status,update,version\n"
 
 # iterate through sites to backup
 for thissite in $SITENAMES; do
@@ -51,7 +56,6 @@ for thissite in $SITENAMES; do
         # Terminus "pipe" command to query an individial site via WP-CLI
         # The 2>/dev/null part supresses any notices or warnings that comes from the command.
         SITEPLUGS="$(terminus wp $thissite.$thisenv -y -v -- plugin list --format=csv 2>/dev/null)"
-        
         # CSV output from terminus includes a title row, which we'll need to replace eventually.
         # We'll identify the first row with a counter variable and exclude it from the output.
         linecount=1
@@ -63,14 +67,16 @@ for thissite in $SITENAMES; do
             PLUGREPORT+="$thissite,$thisenv,$line\n"
         done <<< "$SITEPLUGS"
 
-        SITETHEMES="($terminus wp $thissite.$thisenv -y -v -- theme list --format=csv 2>/dev/null)"
+        SITETHEMES="$(terminus wp $thissite.$thisenv -y -v -- theme list --format=csv 2>/dev/null)"
 
         # Same exact loop as before. Append site name + site environment to output from command.
-        linecount=1
+        linecounttwo=1
         while read -r line; do  
-            test $linecount -eq 1 && ((linecount=linecount+1)) && continue   
+            test $linecounttwo -eq 1 && ((linecounttwo=linecounttwo+1)) && continue   
             THEMEREPORT+="$thissite,$thisenv,$line\n"
         done <<< "$SITETHEMES"
+
+        echo $THEMEREPORT
 
     done
 
