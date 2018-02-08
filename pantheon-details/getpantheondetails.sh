@@ -1,8 +1,8 @@
 #!/bin/sh
-# Script to query multiple sites in Pantheon and perform a few WP-CLI commands against all of them.
-#   - Gathers a plugin list for all sites/environments and creates one big CSV file for them.
-#   - Gathers the active theme for all sites and compiles that list as well. Exports CSV.
-#   - Gather a list of all registered users for any site polled. Limited to LIVE sites. Exports CSV.
+# Script to query multiple sites in Pantheon and gather details about the health and status of our sites.
+#   - Gathers details about the container including billing and # of attached domains.
+#   - Gather a list of all domains associated with our organization. 
+#   TODO: Assess "health" of the site according to several quick-win methods.
 #
 # Requirements:
 #   - Access to Pantheon's terminus CLI
@@ -15,9 +15,9 @@
 # Scrupt is set to 'overwrite' existing files, so this will produce one unique file per day.
 # To keep all produced files, use an hour:min:sec date element and append it to the file name.
 NOW=$(date +"%Y-%m-%d")
-PLUGFILE="pluginreport-$NOW.csv"
-THEMEFILE="themereport-$NOW.csv"
-USERFILE="userreport-$NOW.csv"
+PANTHEONFILE="pantheonreport-$NOW.csv"
+DOMAINFILE="domainreport-$NOW.csv"
+
 
 # Produce a list of sites for this script to query.
 #  - Use site:list to produce a list for a specific team, owner, or REGEX name expression.
@@ -36,7 +36,7 @@ SITENAMES="$(terminus org:site:list asu-engineering --field="name")"
 #  - could create an additional loop that could catch multidev environments + dev/test/live.
 #  - also avoids errors due to environments not being initialized yet.
 
-SITEENVS="dev live"
+SITEENVS="dev test live"
 
 # Counting the number of iterations in the whole script.
 SITECOUNT=($SITENAMES)
@@ -44,20 +44,33 @@ SITEENVCOUNT=($SITEENVS)
 echo "Getting information about ${#SITECOUNT[@]} sites and ${#SITEENVCOUNT[@]} environments."
 
 # Preload PLUGREPORT and THEMEREPORT with the correct CSV title rows.
-PLUGREPORT="site,environment,plugin-name,status,update,version\n"
-THEMEREPORT="site,environment,theme-name,status,update,version\n"
-USERREPORT="site,environment,ID,login,display-name,email,register-date,roles\n"
+PANTHEONREPORT="site,environment,plugin-name,status,update,version\n"
+PANTHEONREPORT="Name,Created,Framework,Service Level,Upstream,PHP Version\n"
+
+# This part of the report can happen prior to the environment loop.
+echo "... issuing terminus commands for: $thissite."
+SITEINFO="$(terminus site:info $thissite --format=csv --fields="name,created,framework,service_level,upstream,php_version")"
+
+SITEREPORT+="$thissite,"
+# Read lines from output and convert/format as needed. Line count used here to format specific parts of the returned list.
+# Better idea: search-replace part of the string with the correct results?
+linecount=1
+while read -r line; do
+    DATA=$line
+    test $linecount -eq 5 && ((DATA="UpstreamID"))
+    SITEREPORT
+    linecount=linecount+1
+    SITEREPORT+="$DATA,"
+done <<< "$SITEINFO"
 
 # iterate through sites
 for thissite in $SITENAMES; do
 
     # iterate through current site environments
     for thisenv in $SITEENVS; do
-        echo "... issuing WP-CLI commands for: $thissite.$thisenv"
+        echo "... issuing terminus commands for: $thissite.$thisenv"
 
-        # Terminus "pipe" command to query an individial site via WP-CLI
-        # The 2>/dev/null part supresses any notices or warnings that comes from the command.
-        # Plugins:
+        SITEPLUGS="$(terminus site:info $thissite --format=csv --fields="name,created,service_level,upstream,php_version")"
         SITEPLUGS="$(terminus wp $thissite.$thisenv -y -v -- plugin list --format=csv 2>/dev/null)"
         
         # CSV output from terminus includes a title row, which we'll need to replace eventually.

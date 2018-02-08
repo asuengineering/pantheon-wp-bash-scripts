@@ -67,8 +67,8 @@ do
                 # Create backups for live version of the site.
                 # Logic here is that code already applied and sitting in various environments is likely OK.
                 # But, code applied for the first time into the DEV environment is potentially breaking things.
-                echo -e "...doing the sensible thing & creating a backup of the code/db of the live environment first."
-                terminus backup:create $site_name.live --element="code database" -q
+                # echo -e "...doing the sensible thing & creating a backup of the live environment first."
+                # terminus backup:create $site_name.live --element="all" -q
         
             elif [ -n "$UPSTREAMUPDATES" ]; then
                 echo -e "...Terminus wasn't sure if updates should be applied or not."
