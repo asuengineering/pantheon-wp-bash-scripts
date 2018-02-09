@@ -22,6 +22,7 @@ DOMAINFILE="domainreport-$NOW.csv"
 # Produce a list of sites for this script to query.
 # SITENAMES="$(terminus site:list --field="name")"
 # SITENAMES="$(terminus org:site:list asu-engineering --tag="schools" --field="name")"
+# SITENAMES="fullcircle spoken-word-news acims"
 
 SITENAMES="$(terminus org:site:list asu-engineering --field="name")"
 
@@ -57,6 +58,7 @@ for thissite in $SITENAMES; do
         line=${line//$PANUPSTR/"Pantheon WP"}
         PANTHEONREPORT+="$line\n"
         SITELABEL=$(echo $line| cut -d',' -f 1)
+        SYSTEMDOMAIN=$(echo $line| cut -d',' -f 2)
     done <<< "$SITEINFO"
 
     # iterate through current site environments
@@ -69,10 +71,11 @@ for thissite in $SITENAMES; do
         while read -r line; do
             test $linecount -eq 1 && ((linecount=linecount+1)) && continue
             DOMAINREPORT+="$SITELABEL,$line\n"
-            SYSTEMDOMAIN=$(echo $line| cut -d',' -f 3)
         done <<< "$DNSINFO"
 
-        # Append system domain line to file as well. System domain = same as DNS entry.
+        SYSTEMDOMAIN="$thisenv-$SYSTEMDOMAIN.pantheonsite.io"
+
+        # Append system domain line to file as well. System domain = modified site "slug"
         DOMAINREPORT+="$SITELABEL,$SYSTEMDOMAIN,system,$SYSTEMDOMAIN,$SYSTEMDOMAIN,system_domain\n"
 
     done
