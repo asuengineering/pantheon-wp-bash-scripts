@@ -5,8 +5,7 @@
 
 # Third iteration of this script. See others in the series for better documentation.
 
-## SITENAMES="$(terminus org:site:list asu-engineering --field="name")"
-SITENAMES="acims advising-directory"
+SITENAMES="$(terminus org:site:list asu-engineering --field="name")"
 SITEENVS="dev test live"
 
 # iterate through sites
