@@ -1,0 +1,1025 @@
+| wp_term_taxonomy     | description           | 0            | SQL  |
+| wp_termmeta          | meta_key              | 0            | SQL  |
+| wp_termmeta          | meta_value            | 0            | SQL  |
+| wp_terms             | name                  | 0            | SQL  |
+| wp_terms             | slug                  | 0            | SQL  |
+| wp_usermeta          | meta_key              | 0            | SQL  |
+| wp_usermeta          | meta_value            | 0            | PHP  |
+| wp_users             | user_login            | 0            | SQL  |
+| wp_users             | user_nicename         | 0            | SQL  |
+| wp_users             | user_email            | 0            | SQL  |
+| wp_users             | user_url              | 0            | SQL  |
+| wp_users             | user_activation_key   | 0            | SQL  |
+| wp_users             | display_name          | 0            | SQL  |
++----------------------+-----------------------+--------------+------+
+Success: Made 1 replacement.
+ [notice] Command: fulton-student-council.dev -- wp search-replace instagram.com/fultonengineering instagram.com/asuengineering [Exit: 0]
++----------------------+-----------------------+--------------+------+
+| Table                | Column                | Replacements | Type |
++----------------------+-----------------------+--------------+------+
+| wp_commentmeta       | meta_key              | 0            | SQL  |
+| wp_commentmeta       | meta_value            | 0            | PHP  |
+| wp_comments          | comment_author        | 0            | SQL  |
+| wp_comments          | comment_author_email  | 0            | SQL  |
+| wp_comments          | comment_author_url    | 0            | SQL  |
+| wp_comments          | comment_author_IP     | 0            | SQL  |
+| wp_comments          | comment_content       | 0            | SQL  |
+| wp_comments          | comment_approved      | 0            | SQL  |
+| wp_comments          | comment_agent         | 0            | SQL  |
+| wp_comments          | comment_type          | 0            | SQL  |
+| wp_links             | link_url              | 0            | SQL  |
+| wp_links             | link_name             | 0            | SQL  |
+| wp_links             | link_image            | 0            | SQL  |
+| wp_links             | link_target           | 0            | SQL  |
+| wp_links             | link_description      | 0            | SQL  |
+| wp_links             | link_visible          | 0            | SQL  |
+| wp_links             | link_rel              | 0            | SQL  |
+| wp_links             | link_notes            | 0            | SQL  |
+| wp_links             | link_rss              | 0            | SQL  |
+| wp_options           | option_name           | 0            | SQL  |
+| wp_options           | option_value          | 0            | PHP  |
+| wp_options           | autoload              | 0            | SQL  |
+| wp_pantheon_sessions |                       | skipped      |      |
+| wp_postmeta          | meta_key              | 0            | SQL  |
+| wp_postmeta          | meta_value            | 0            | PHP  |
+| wp_posts             | post_content          | 0            | SQL  |
+| wp_posts             | post_title            | 0            | SQL  |
+| wp_posts             | post_excerpt          | 0            | SQL  |
+| wp_posts             | post_status           | 0            | SQL  |
+| wp_posts             | comment_status        | 0            | SQL  |
+| wp_posts             | ping_status           | 0            | SQL  |
+| wp_posts             | post_password         | 0            | SQL  |
+| wp_posts             | post_name             | 0            | SQL  |
+| wp_posts             | to_ping               | 0            | SQL  |
+| wp_posts             | pinged                | 0            | SQL  |
+| wp_posts             | post_content_filtered | 0            | SQL  |
+| wp_posts             | guid                  | 0            | SQL  |
+| wp_posts             | post_type             | 0            | SQL  |
+| wp_posts             | post_mime_type        | 0            | SQL  |
+| wp_term_taxonomy     | taxonomy              | 0            | SQL  |
+| wp_term_taxonomy     | description           | 0            | SQL  |
+| wp_termmeta          | meta_key              | 0            | SQL  |
+| wp_termmeta          | meta_value            | 0            | SQL  |
+| wp_terms             | name                  | 0            | SQL  |
+| wp_terms             | slug                  | 0            | SQL  |
+| wp_usermeta          | meta_key              | 0            | SQL  |
+| wp_usermeta          | meta_value            | 0            | PHP  |
+| wp_users             | user_login            | 0            | SQL  |
+| wp_users             | user_nicename         | 0            | SQL  |
+| wp_users             | user_email            | 0            | SQL  |
+| wp_users             | user_url              | 0            | SQL  |
+| wp_users             | user_activation_key   | 0            | SQL  |
+| wp_users             | display_name          | 0            | SQL  |
++----------------------+-----------------------+--------------+------+
+Success: Made 0 replacements.
+ [notice] Command: fulton-student-council.dev -- wp search-replace engineering.asu.edu/factbook/why-students-choose-fulton-engineering engineering.asu.edu/about [Exit: 0]
++----------------------+-----------------------+--------------+------+
+| Table                | Column                | Replacements | Type |
++----------------------+-----------------------+--------------+------+
+| wp_commentmeta       | meta_key              | 0            | SQL  |
+| wp_commentmeta       | meta_value            | 0            | PHP  |
+| wp_comments          | comment_author        | 0            | SQL  |
+| wp_comments          | comment_author_email  | 0            | SQL  |
+| wp_comments          | comment_author_url    | 0            | SQL  |
+| wp_comments          | comment_author_IP     | 0            | SQL  |
+| wp_comments          | comment_content       | 0            | SQL  |
+| wp_comments          | comment_approved      | 0            | SQL  |
+| wp_comments          | comment_agent         | 0            | SQL  |
+| wp_comments          | comment_type          | 0            | SQL  |
+| wp_links             | link_url              | 0            | SQL  |
+| wp_links             | link_name             | 0            | SQL  |
+| wp_links             | link_image            | 0            | SQL  |
+| wp_links             | link_target           | 0            | SQL  |
+| wp_links             | link_description      | 0            | SQL  |
+| wp_links             | link_visible          | 0            | SQL  |
+| wp_links             | link_rel              | 0            | SQL  |
+| wp_links             | link_notes            | 0            | SQL  |
+| wp_links             | link_rss              | 0            | SQL  |
+| wp_options           | option_name           | 0            | SQL  |
+| wp_options           | option_value          | 0            | PHP  |
+| wp_options           | autoload              | 0            | SQL  |
+| wp_pantheon_sessions |                       | skipped      |      |
+| wp_postmeta          | meta_key              | 0            | SQL  |
+| wp_postmeta          | meta_value            | 0            | PHP  |
+| wp_posts             | post_content          | 0            | SQL  |
+| wp_posts             | post_title            | 0            | SQL  |
+| wp_posts             | post_excerpt          | 0            | SQL  |
+| wp_posts             | post_status           | 0            | SQL  |
+| wp_posts             | comment_status        | 0            | SQL  |
+| wp_posts             | ping_status           | 0            | SQL  |
+| wp_posts             | post_password         | 0            | SQL  |
+| wp_posts             | post_name             | 0            | SQL  |
+| wp_posts             | to_ping               | 0            | SQL  |
+| wp_posts             | pinged                | 0            | SQL  |
+| wp_posts             | post_content_filtered | 0            | SQL  |
+| wp_posts             | guid                  | 0            | SQL  |
+| wp_posts             | post_type             | 0            | SQL  |
+| wp_posts             | post_mime_type        | 0            | SQL  |
+| wp_term_taxonomy     | taxonomy              | 0            | SQL  |
+| wp_term_taxonomy     | description           | 0            | SQL  |
+| wp_termmeta          | meta_key              | 0            | SQL  |
+| wp_termmeta          | meta_value            | 0            | SQL  |
+| wp_terms             | name                  | 0            | SQL  |
+| wp_terms             | slug                  | 0            | SQL  |
+| wp_usermeta          | meta_key              | 0            | SQL  |
+| wp_usermeta          | meta_value            | 0            | PHP  |
+| wp_users             | user_login            | 0            | SQL  |
+| wp_users             | user_nicename         | 0            | SQL  |
+| wp_users             | user_email            | 0            | SQL  |
+| wp_users             | user_url              | 0            | SQL  |
+| wp_users             | user_activation_key   | 0            | SQL  |
+| wp_users             | display_name          | 0            | SQL  |
++----------------------+-----------------------+--------------+------+
+Success: Made 0 replacements.
+ [notice] Command: fulton-student-council.dev -- wp search-replace engineering.asu.edu/factbook/data engineering.asu.edu/enrollment [Exit: 0]
++----------------------+-----------------------+--------------+------+
+| Table                | Column                | Replacements | Type |
++----------------------+-----------------------+--------------+------+
+| wp_commentmeta       | meta_key              | 0            | SQL  |
+| wp_commentmeta       | meta_value            | 0            | PHP  |
+| wp_comments          | comment_author        | 0            | SQL  |
+| wp_comments          | comment_author_email  | 0            | SQL  |
+| wp_comments          | comment_author_url    | 0            | SQL  |
+| wp_comments          | comment_author_IP     | 0            | SQL  |
+| wp_comments          | comment_content       | 0            | SQL  |
+| wp_comments          | comment_approved      | 0            | SQL  |
+| wp_comments          | comment_agent         | 0            | SQL  |
+| wp_comments          | comment_type          | 0            | SQL  |
+| wp_links             | link_url              | 0            | SQL  |
+| wp_links             | link_name             | 0            | SQL  |
+| wp_links             | link_image            | 0            | SQL  |
+| wp_links             | link_target           | 0            | SQL  |
+| wp_links             | link_description      | 0            | SQL  |
+| wp_links             | link_visible          | 0            | SQL  |
+| wp_links             | link_rel              | 0            | SQL  |
+| wp_links             | link_notes            | 0            | SQL  |
+| wp_links             | link_rss              | 0            | SQL  |
+| wp_options           | option_name           | 0            | SQL  |
+| wp_options           | option_value          | 0            | PHP  |
+| wp_options           | autoload              | 0            | SQL  |
+| wp_pantheon_sessions |                       | skipped      |      |
+| wp_postmeta          | meta_key              | 0            | SQL  |
+| wp_postmeta          | meta_value            | 0            | PHP  |
+| wp_posts             | post_content          | 0            | SQL  |
+| wp_posts             | post_title            | 0            | SQL  |
+| wp_posts             | post_excerpt          | 0            | SQL  |
+| wp_posts             | post_status           | 0            | SQL  |
+| wp_posts             | comment_status        | 0            | SQL  |
+| wp_posts             | ping_status           | 0            | SQL  |
+| wp_posts             | post_password         | 0            | SQL  |
+| wp_posts             | post_name             | 0            | SQL  |
+| wp_posts             | to_ping               | 0            | SQL  |
+| wp_posts             | pinged                | 0            | SQL  |
+| wp_posts             | post_content_filtered | 0            | SQL  |
+| wp_posts             | guid                  | 0            | SQL  |
+| wp_posts             | post_type             | 0            | SQL  |
+| wp_posts             | post_mime_type        | 0            | SQL  |
+| wp_term_taxonomy     | taxonomy              | 0            | SQL  |
+| wp_term_taxonomy     | description           | 0            | SQL  |
+| wp_termmeta          | meta_key              | 0            | SQL  |
+| wp_termmeta          | meta_value            | 0            | SQL  |
+| wp_terms             | name                  | 0            | SQL  |
+| wp_terms             | slug                  | 0            | SQL  |
+| wp_usermeta          | meta_key              | 0            | SQL  |
+| wp_usermeta          | meta_value            | 0            | PHP  |
+| wp_users             | user_login            | 0            | SQL  |
+| wp_users             | user_nicename         | 0            | SQL  |
+| wp_users             | user_email            | 0            | SQL  |
+| wp_users             | user_url              | 0            | SQL  |
+| wp_users             | user_activation_key   | 0            | SQL  |
+| wp_users             | display_name          | 0            | SQL  |
++----------------------+-----------------------+--------------+------+
+Success: Made 0 replacements.
+ [notice] Command: fulton-student-council.dev -- wp search-replace factbook.engineering.asu.edu/about/the-fulton-difference engineering.asu.edu/about [Exit: 0]
+... updates are available.
+... creating a backup of the code base & database for the live environment.
+... switching to git mode, attempting to apply updates.
+... updates applied to site normally.
+... attempting to deploy code to the test environment.
+ [notice] Deployed code to "test", and cloned files from "live", and cloned database from "live"
+... applying DB changes including Instagram handle switch to the test environment.
+ [warning] This environment is in read-only Git mode. If you want to make changes to the codebase of this site (e.g. updating modules or plugins), you will need to toggle into read/write SFTP mode first.
+ [notice] Command: fulton-student-council.test -- wp search-replace instagram.com/fultonengineering instagram.com/asuengineering [Exit: 0]
+ [warning] This environment is in read-only Git mode. If you want to make changes to the codebase of this site (e.g. updating modules or plugins), you will need to toggle into read/write SFTP mode first.
+ [notice] Command: fulton-student-council.test -- wp search-replace engineering.asu.edu/factbook/why-students-choose-fulton-engineering engineering.asu.edu/about [Exit: 0]
+ [warning] This environment is in read-only Git mode. If you want to make changes to the codebase of this site (e.g. updating modules or plugins), you will need to toggle into read/write SFTP mode first.
+ [notice] Command: fulton-student-council.test -- wp search-replace engineering.asu.edu/factbook/data engineering.asu.edu/enrollment [Exit: 0]
+ [warning] This environment is in read-only Git mode. If you want to make changes to the codebase of this site (e.g. updating modules or plugins), you will need to toggle into read/write SFTP mode first.
+ [notice] Command: fulton-student-council.test -- wp search-replace factbook.engineering.asu.edu/about/the-fulton-difference engineering.asu.edu/about [Exit: 0]
+... attempting to deploy code to the live environment.
+ [notice] Deployed code to "live"
+... applying DB changes including Instagram handle switch to the live environment.
+ [warning] This environment is in read-only Git mode. If you want to make changes to the codebase of this site (e.g. updating modules or plugins), you will need to toggle into read/write SFTP mode first.
+ [notice] Command: fulton-student-council.live -- wp search-replace instagram.com/fultonengineering instagram.com/asuengineering [Exit: 0]
+ [warning] This environment is in read-only Git mode. If you want to make changes to the codebase of this site (e.g. updating modules or plugins), you will need to toggle into read/write SFTP mode first.
+ [notice] Command: fulton-student-council.live -- wp search-replace engineering.asu.edu/factbook/why-students-choose-fulton-engineering engineering.asu.edu/about [Exit: 0]
+ [warning] This environment is in read-only Git mode. If you want to make changes to the codebase of this site (e.g. updating modules or plugins), you will need to toggle into read/write SFTP mode first.
+ [notice] Command: fulton-student-council.live -- wp search-replace engineering.asu.edu/factbook/data engineering.asu.edu/enrollment [Exit: 0]
+ [warning] This environment is in read-only Git mode. If you want to make changes to the codebase of this site (e.g. updating modules or plugins), you will need to toggle into read/write SFTP mode first.
+ [notice] Command: fulton-student-council.live -- wp search-replace factbook.engineering.asu.edu/about/the-fulton-difference engineering.asu.edu/about [Exit: 0]
+Work complete with fulton-student-council.
+
+Working with site 236 of 238: sierks-lab
+... applying Instagram handle DB fix to the dev environment.
++----------------------+-----------------------+--------------+------+
+| Table                | Column                | Replacements | Type |
++----------------------+-----------------------+--------------+------+
+| wp_commentmeta       | meta_key              | 0            | SQL  |
+| wp_commentmeta       | meta_value            | 0            | SQL  |
+| wp_comments          | comment_author        | 0            | SQL  |
+| wp_comments          | comment_author_email  | 0            | SQL  |
+| wp_comments          | comment_author_url    | 0            | SQL  |
+| wp_comments          | comment_author_IP     | 0            | SQL  |
+| wp_comments          | comment_content       | 0            | SQL  |
+| wp_comments          | comment_approved      | 0            | SQL  |
+| wp_comments          | comment_agent         | 0            | SQL  |
+| wp_comments          | comment_type          | 0            | SQL  |
+| wp_links             | link_url              | 0            | SQL  |
+| wp_links             | link_name             | 0            | SQL  |
+| wp_links             | link_image            | 0            | SQL  |
+| wp_links             | link_target           | 0            | SQL  |
+| wp_links             | link_description      | 0            | SQL  |
+| wp_links             | link_visible          | 0            | SQL  |
+| wp_links             | link_rel              | 0            | SQL  |
+| wp_links             | link_notes            | 0            | SQL  |
+| wp_links             | link_rss              | 0            | SQL  |
+| wp_options           | option_name           | 0            | SQL  |
+| wp_options           | option_value          | 0            | PHP  |
+| wp_options           | autoload              | 0            | SQL  |
+| wp_pantheon_sessions |                       | skipped      |      |
+| wp_postmeta          | meta_key              | 0            | SQL  |
+| wp_postmeta          | meta_value            | 0            | PHP  |
+| wp_posts             | post_content          | 0            | SQL  |
+| wp_posts             | post_title            | 0            | SQL  |
+| wp_posts             | post_excerpt          | 0            | SQL  |
+| wp_posts             | post_status           | 0            | SQL  |
+| wp_posts             | comment_status        | 0            | SQL  |
+| wp_posts             | ping_status           | 0            | SQL  |
+| wp_posts             | post_password         | 0            | SQL  |
+| wp_posts             | post_name             | 0            | SQL  |
+| wp_posts             | to_ping               | 0            | SQL  |
+| wp_posts             | pinged                | 0            | SQL  |
+| wp_posts             | post_content_filtered | 0            | SQL  |
+| wp_posts             | guid                  | 0            | SQL  |
+| wp_posts             | post_type             | 0            | SQL  |
+| wp_posts             | post_mime_type        | 0            | SQL  |
+| wp_term_taxonomy     | taxonomy              | 0            | SQL  |
+| wp_term_taxonomy     | description           | 0            | SQL  |
+| wp_termmeta          | meta_key              | 0            | SQL  |
+| wp_termmeta          | meta_value            | 0            | SQL  |
+| wp_terms             | name                  | 0            | SQL  |
+| wp_terms             | slug                  | 0            | SQL  |
+| wp_usermeta          | meta_key              | 0            | SQL  |
+| wp_usermeta          | meta_value            | 0            | PHP  |
+| wp_users             | user_login            | 0            | SQL  |
+| wp_users             | user_nicename         | 0            | SQL  |
+| wp_users             | user_email            | 0            | SQL  |
+| wp_users             | user_url              | 0            | SQL  |
+| wp_users             | user_activation_key   | 0            | SQL  |
+| wp_users             | display_name          | 0            | SQL  |
++----------------------+-----------------------+--------------+------+
+Success: Made 0 replacements.
+ [notice] Command: sierks-lab.dev -- wp search-replace instagram.com/fultonengineering instagram.com/asuengineering [Exit: 0]
++----------------------+-----------------------+--------------+------+
+| Table                | Column                | Replacements | Type |
++----------------------+-----------------------+--------------+------+
+| wp_commentmeta       | meta_key              | 0            | SQL  |
+| wp_commentmeta       | meta_value            | 0            | SQL  |
+| wp_comments          | comment_author        | 0            | SQL  |
+| wp_comments          | comment_author_email  | 0            | SQL  |
+| wp_comments          | comment_author_url    | 0            | SQL  |
+| wp_comments          | comment_author_IP     | 0            | SQL  |
+| wp_comments          | comment_content       | 0            | SQL  |
+| wp_comments          | comment_approved      | 0            | SQL  |
+| wp_comments          | comment_agent         | 0            | SQL  |
+| wp_comments          | comment_type          | 0            | SQL  |
+| wp_links             | link_url              | 0            | SQL  |
+| wp_links             | link_name             | 0            | SQL  |
+| wp_links             | link_image            | 0            | SQL  |
+| wp_links             | link_target           | 0            | SQL  |
+| wp_links             | link_description      | 0            | SQL  |
+| wp_links             | link_visible          | 0            | SQL  |
+| wp_links             | link_rel              | 0            | SQL  |
+| wp_links             | link_notes            | 0            | SQL  |
+| wp_links             | link_rss              | 0            | SQL  |
+| wp_options           | option_name           | 0            | SQL  |
+| wp_options           | option_value          | 0            | PHP  |
+| wp_options           | autoload              | 0            | SQL  |
+| wp_pantheon_sessions |                       | skipped      |      |
+| wp_postmeta          | meta_key              | 0            | SQL  |
+| wp_postmeta          | meta_value            | 0            | PHP  |
+| wp_posts             | post_content          | 0            | SQL  |
+| wp_posts             | post_title            | 0            | SQL  |
+| wp_posts             | post_excerpt          | 0            | SQL  |
+| wp_posts             | post_status           | 0            | SQL  |
+| wp_posts             | comment_status        | 0            | SQL  |
+| wp_posts             | ping_status           | 0            | SQL  |
+| wp_posts             | post_password         | 0            | SQL  |
+| wp_posts             | post_name             | 0            | SQL  |
+| wp_posts             | to_ping               | 0            | SQL  |
+| wp_posts             | pinged                | 0            | SQL  |
+| wp_posts             | post_content_filtered | 0            | SQL  |
+| wp_posts             | guid                  | 0            | SQL  |
+| wp_posts             | post_type             | 0            | SQL  |
+| wp_posts             | post_mime_type        | 0            | SQL  |
+| wp_term_taxonomy     | taxonomy              | 0            | SQL  |
+| wp_term_taxonomy     | description           | 0            | SQL  |
+| wp_termmeta          | meta_key              | 0            | SQL  |
+| wp_termmeta          | meta_value            | 0            | SQL  |
+| wp_terms             | name                  | 0            | SQL  |
+| wp_terms             | slug                  | 0            | SQL  |
+| wp_usermeta          | meta_key              | 0            | SQL  |
+| wp_usermeta          | meta_value            | 0            | PHP  |
+| wp_users             | user_login            | 0            | SQL  |
+| wp_users             | user_nicename         | 0            | SQL  |
+| wp_users             | user_email            | 0            | SQL  |
+| wp_users             | user_url              | 0            | SQL  |
+| wp_users             | user_activation_key   | 0            | SQL  |
+| wp_users             | display_name          | 0            | SQL  |
++----------------------+-----------------------+--------------+------+
+Success: Made 0 replacements.
+ [notice] Command: sierks-lab.dev -- wp search-replace engineering.asu.edu/factbook/why-students-choose-fulton-engineering engineering.asu.edu/about [Exit: 0]
++----------------------+-----------------------+--------------+------+
+| Table                | Column                | Replacements | Type |
++----------------------+-----------------------+--------------+------+
+| wp_commentmeta       | meta_key              | 0            | SQL  |
+| wp_commentmeta       | meta_value            | 0            | SQL  |
+| wp_comments          | comment_author        | 0            | SQL  |
+| wp_comments          | comment_author_email  | 0            | SQL  |
+| wp_comments          | comment_author_url    | 0            | SQL  |
+| wp_comments          | comment_author_IP     | 0            | SQL  |
+| wp_comments          | comment_content       | 0            | SQL  |
+| wp_comments          | comment_approved      | 0            | SQL  |
+| wp_comments          | comment_agent         | 0            | SQL  |
+| wp_comments          | comment_type          | 0            | SQL  |
+| wp_links             | link_url              | 0            | SQL  |
+| wp_links             | link_name             | 0            | SQL  |
+| wp_links             | link_image            | 0            | SQL  |
+| wp_links             | link_target           | 0            | SQL  |
+| wp_links             | link_description      | 0            | SQL  |
+| wp_links             | link_visible          | 0            | SQL  |
+| wp_links             | link_rel              | 0            | SQL  |
+| wp_links             | link_notes            | 0            | SQL  |
+| wp_links             | link_rss              | 0            | SQL  |
+| wp_options           | option_name           | 0            | SQL  |
+| wp_options           | option_value          | 0            | PHP  |
+| wp_options           | autoload              | 0            | SQL  |
+| wp_pantheon_sessions |                       | skipped      |      |
+| wp_postmeta          | meta_key              | 0            | SQL  |
+| wp_postmeta          | meta_value            | 0            | PHP  |
+| wp_posts             | post_content          | 0            | SQL  |
+| wp_posts             | post_title            | 0            | SQL  |
+| wp_posts             | post_excerpt          | 0            | SQL  |
+| wp_posts             | post_status           | 0            | SQL  |
+| wp_posts             | comment_status        | 0            | SQL  |
+| wp_posts             | ping_status           | 0            | SQL  |
+| wp_posts             | post_password         | 0            | SQL  |
+| wp_posts             | post_name             | 0            | SQL  |
+| wp_posts             | to_ping               | 0            | SQL  |
+| wp_posts             | pinged                | 0            | SQL  |
+| wp_posts             | post_content_filtered | 0            | SQL  |
+| wp_posts             | guid                  | 0            | SQL  |
+| wp_posts             | post_type             | 0            | SQL  |
+| wp_posts             | post_mime_type        | 0            | SQL  |
+| wp_term_taxonomy     | taxonomy              | 0            | SQL  |
+| wp_term_taxonomy     | description           | 0            | SQL  |
+| wp_termmeta          | meta_key              | 0            | SQL  |
+| wp_termmeta          | meta_value            | 0            | SQL  |
+| wp_terms             | name                  | 0            | SQL  |
+| wp_terms             | slug                  | 0            | SQL  |
+| wp_usermeta          | meta_key              | 0            | SQL  |
+| wp_usermeta          | meta_value            | 0            | PHP  |
+| wp_users             | user_login            | 0            | SQL  |
+| wp_users             | user_nicename         | 0            | SQL  |
+| wp_users             | user_email            | 0            | SQL  |
+| wp_users             | user_url              | 0            | SQL  |
+| wp_users             | user_activation_key   | 0            | SQL  |
+| wp_users             | display_name          | 0            | SQL  |
++----------------------+-----------------------+--------------+------+
+Success: Made 0 replacements.
+ [notice] Command: sierks-lab.dev -- wp search-replace engineering.asu.edu/factbook/data engineering.asu.edu/enrollment [Exit: 0]
++----------------------+-----------------------+--------------+------+
+| Table                | Column                | Replacements | Type |
++----------------------+-----------------------+--------------+------+
+| wp_commentmeta       | meta_key              | 0            | SQL  |
+| wp_commentmeta       | meta_value            | 0            | SQL  |
+| wp_comments          | comment_author        | 0            | SQL  |
+| wp_comments          | comment_author_email  | 0            | SQL  |
+| wp_comments          | comment_author_url    | 0            | SQL  |
+| wp_comments          | comment_author_IP     | 0            | SQL  |
+| wp_comments          | comment_content       | 0            | SQL  |
+| wp_comments          | comment_approved      | 0            | SQL  |
+| wp_comments          | comment_agent         | 0            | SQL  |
+| wp_comments          | comment_type          | 0            | SQL  |
+| wp_links             | link_url              | 0            | SQL  |
+| wp_links             | link_name             | 0            | SQL  |
+| wp_links             | link_image            | 0            | SQL  |
+| wp_links             | link_target           | 0            | SQL  |
+| wp_links             | link_description      | 0            | SQL  |
+| wp_links             | link_visible          | 0            | SQL  |
+| wp_links             | link_rel              | 0            | SQL  |
+| wp_links             | link_notes            | 0            | SQL  |
+| wp_links             | link_rss              | 0            | SQL  |
+| wp_options           | option_name           | 0            | SQL  |
+| wp_options           | option_value          | 0            | PHP  |
+| wp_options           | autoload              | 0            | SQL  |
+| wp_pantheon_sessions |                       | skipped      |      |
+| wp_postmeta          | meta_key              | 0            | SQL  |
+| wp_postmeta          | meta_value            | 0            | PHP  |
+| wp_posts             | post_content          | 0            | SQL  |
+| wp_posts             | post_title            | 0            | SQL  |
+| wp_posts             | post_excerpt          | 0            | SQL  |
+| wp_posts             | post_status           | 0            | SQL  |
+| wp_posts             | comment_status        | 0            | SQL  |
+| wp_posts             | ping_status           | 0            | SQL  |
+| wp_posts             | post_password         | 0            | SQL  |
+| wp_posts             | post_name             | 0            | SQL  |
+| wp_posts             | to_ping               | 0            | SQL  |
+| wp_posts             | pinged                | 0            | SQL  |
+| wp_posts             | post_content_filtered | 0            | SQL  |
+| wp_posts             | guid                  | 0            | SQL  |
+| wp_posts             | post_type             | 0            | SQL  |
+| wp_posts             | post_mime_type        | 0            | SQL  |
+| wp_term_taxonomy     | taxonomy              | 0            | SQL  |
+| wp_term_taxonomy     | description           | 0            | SQL  |
+| wp_termmeta          | meta_key              | 0            | SQL  |
+| wp_termmeta          | meta_value            | 0            | SQL  |
+| wp_terms             | name                  | 0            | SQL  |
+| wp_terms             | slug                  | 0            | SQL  |
+| wp_usermeta          | meta_key              | 0            | SQL  |
+| wp_usermeta          | meta_value            | 0            | PHP  |
+| wp_users             | user_login            | 0            | SQL  |
+| wp_users             | user_nicename         | 0            | SQL  |
+| wp_users             | user_email            | 0            | SQL  |
+| wp_users             | user_url              | 0            | SQL  |
+| wp_users             | user_activation_key   | 0            | SQL  |
+| wp_users             | display_name          | 0            | SQL  |
++----------------------+-----------------------+--------------+------+
+Success: Made 0 replacements.
+ [notice] Command: sierks-lab.dev -- wp search-replace factbook.engineering.asu.edu/about/the-fulton-difference engineering.asu.edu/about [Exit: 0]
+... updates are available.
+... creating a backup of the code base & database for the live environment.
+... switching to git mode, attempting to apply updates.
+... updates applied to site normally.
+... attempting to deploy code to the test environment.
+ [notice] Deployed code to "test", and cloned files from "live", and cloned database from "live"
+... applying DB changes including Instagram handle switch to the test environment.
+ [warning] This environment is in read-only Git mode. If you want to make changes to the codebase of this site (e.g. updating modules or plugins), you will need to toggle into read/write SFTP mode first.
+ [notice] Command: sierks-lab.test -- wp search-replace instagram.com/fultonengineering instagram.com/asuengineering [Exit: 0]
+ [warning] This environment is in read-only Git mode. If you want to make changes to the codebase of this site (e.g. updating modules or plugins), you will need to toggle into read/write SFTP mode first.
+ [notice] Command: sierks-lab.test -- wp search-replace engineering.asu.edu/factbook/why-students-choose-fulton-engineering engineering.asu.edu/about [Exit: 0]
+ [warning] This environment is in read-only Git mode. If you want to make changes to the codebase of this site (e.g. updating modules or plugins), you will need to toggle into read/write SFTP mode first.
+ [notice] Command: sierks-lab.test -- wp search-replace engineering.asu.edu/factbook/data engineering.asu.edu/enrollment [Exit: 0]
+ [warning] This environment is in read-only Git mode. If you want to make changes to the codebase of this site (e.g. updating modules or plugins), you will need to toggle into read/write SFTP mode first.
+ [notice] Command: sierks-lab.test -- wp search-replace factbook.engineering.asu.edu/about/the-fulton-difference engineering.asu.edu/about [Exit: 0]
+... attempting to deploy code to the live environment.
+ [notice] Deployed code to "live"
+... applying DB changes including Instagram handle switch to the live environment.
+ [warning] This environment is in read-only Git mode. If you want to make changes to the codebase of this site (e.g. updating modules or plugins), you will need to toggle into read/write SFTP mode first.
+ [notice] Command: sierks-lab.live -- wp search-replace instagram.com/fultonengineering instagram.com/asuengineering [Exit: 0]
+ [warning] This environment is in read-only Git mode. If you want to make changes to the codebase of this site (e.g. updating modules or plugins), you will need to toggle into read/write SFTP mode first.
+ [notice] Command: sierks-lab.live -- wp search-replace engineering.asu.edu/factbook/why-students-choose-fulton-engineering engineering.asu.edu/about [Exit: 0]
+ [warning] This environment is in read-only Git mode. If you want to make changes to the codebase of this site (e.g. updating modules or plugins), you will need to toggle into read/write SFTP mode first.
+ [notice] Command: sierks-lab.live -- wp search-replace engineering.asu.edu/factbook/data engineering.asu.edu/enrollment [Exit: 0]
+ [warning] This environment is in read-only Git mode. If you want to make changes to the codebase of this site (e.g. updating modules or plugins), you will need to toggle into read/write SFTP mode first.
+ [notice] Command: sierks-lab.live -- wp search-replace factbook.engineering.asu.edu/about/the-fulton-difference engineering.asu.edu/about [Exit: 0]
+Work complete with sierks-lab.
+
+Working with site 237 of 238: fse-scholarships
+... applying Instagram handle DB fix to the dev environment.
++----------------------+-----------------------+--------------+------+
+| Table                | Column                | Replacements | Type |
++----------------------+-----------------------+--------------+------+
+| wp_commentmeta       | meta_key              | 0            | SQL  |
+| wp_commentmeta       | meta_value            | 0            | SQL  |
+| wp_comments          | comment_author        | 0            | SQL  |
+| wp_comments          | comment_author_email  | 0            | SQL  |
+| wp_comments          | comment_author_url    | 0            | SQL  |
+| wp_comments          | comment_author_IP     | 0            | SQL  |
+| wp_comments          | comment_content       | 0            | SQL  |
+| wp_comments          | comment_approved      | 0            | SQL  |
+| wp_comments          | comment_agent         | 0            | SQL  |
+| wp_comments          | comment_type          | 0            | SQL  |
+| wp_links             | link_url              | 0            | SQL  |
+| wp_links             | link_name             | 0            | SQL  |
+| wp_links             | link_image            | 0            | SQL  |
+| wp_links             | link_target           | 0            | SQL  |
+| wp_links             | link_description      | 0            | SQL  |
+| wp_links             | link_visible          | 0            | SQL  |
+| wp_links             | link_rel              | 0            | SQL  |
+| wp_links             | link_notes            | 0            | SQL  |
+| wp_links             | link_rss              | 0            | SQL  |
+| wp_options           | option_name           | 0            | SQL  |
+| wp_options           | option_value          | 0            | PHP  |
+| wp_options           | autoload              | 0            | SQL  |
+| wp_pantheon_sessions |                       | skipped      |      |
+| wp_postmeta          | meta_key              | 0            | SQL  |
+| wp_postmeta          | meta_value            | 0            | PHP  |
+| wp_posts             | post_content          | 0            | SQL  |
+| wp_posts             | post_title            | 0            | SQL  |
+| wp_posts             | post_excerpt          | 0            | SQL  |
+| wp_posts             | post_status           | 0            | SQL  |
+| wp_posts             | comment_status        | 0            | SQL  |
+| wp_posts             | ping_status           | 0            | SQL  |
+| wp_posts             | post_password         | 0            | SQL  |
+| wp_posts             | post_name             | 0            | SQL  |
+| wp_posts             | to_ping               | 0            | SQL  |
+| wp_posts             | pinged                | 0            | SQL  |
+| wp_posts             | post_content_filtered | 0            | SQL  |
+| wp_posts             | guid                  | 0            | SQL  |
+| wp_posts             | post_type             | 0            | SQL  |
+| wp_posts             | post_mime_type        | 0            | SQL  |
+| wp_term_taxonomy     | taxonomy              | 0            | SQL  |
+| wp_term_taxonomy     | description           | 0            | SQL  |
+| wp_termmeta          | meta_key              | 0            | SQL  |
+| wp_termmeta          | meta_value            | 0            | SQL  |
+| wp_terms             | name                  | 0            | SQL  |
+| wp_terms             | slug                  | 0            | SQL  |
+| wp_usermeta          | meta_key              | 0            | SQL  |
+| wp_usermeta          | meta_value            | 0            | PHP  |
+| wp_users             | user_login            | 0            | SQL  |
+| wp_users             | user_nicename         | 0            | SQL  |
+| wp_users             | user_email            | 0            | SQL  |
+| wp_users             | user_url              | 0            | SQL  |
+| wp_users             | user_activation_key   | 0            | SQL  |
+| wp_users             | display_name          | 0            | SQL  |
++----------------------+-----------------------+--------------+------+
+Success: Made 0 replacements.
+ [notice] Command: fse-scholarships.dev -- wp search-replace instagram.com/fultonengineering instagram.com/asuengineering [Exit: 0]
++----------------------+-----------------------+--------------+------+
+| Table                | Column                | Replacements | Type |
++----------------------+-----------------------+--------------+------+
+| wp_commentmeta       | meta_key              | 0            | SQL  |
+| wp_commentmeta       | meta_value            | 0            | SQL  |
+| wp_comments          | comment_author        | 0            | SQL  |
+| wp_comments          | comment_author_email  | 0            | SQL  |
+| wp_comments          | comment_author_url    | 0            | SQL  |
+| wp_comments          | comment_author_IP     | 0            | SQL  |
+| wp_comments          | comment_content       | 0            | SQL  |
+| wp_comments          | comment_approved      | 0            | SQL  |
+| wp_comments          | comment_agent         | 0            | SQL  |
+| wp_comments          | comment_type          | 0            | SQL  |
+| wp_links             | link_url              | 0            | SQL  |
+| wp_links             | link_name             | 0            | SQL  |
+| wp_links             | link_image            | 0            | SQL  |
+| wp_links             | link_target           | 0            | SQL  |
+| wp_links             | link_description      | 0            | SQL  |
+| wp_links             | link_visible          | 0            | SQL  |
+| wp_links             | link_rel              | 0            | SQL  |
+| wp_links             | link_notes            | 0            | SQL  |
+| wp_links             | link_rss              | 0            | SQL  |
+| wp_options           | option_name           | 0            | SQL  |
+| wp_options           | option_value          | 0            | PHP  |
+| wp_options           | autoload              | 0            | SQL  |
+| wp_pantheon_sessions |                       | skipped      |      |
+| wp_postmeta          | meta_key              | 0            | SQL  |
+| wp_postmeta          | meta_value            | 0            | PHP  |
+| wp_posts             | post_content          | 0            | SQL  |
+| wp_posts             | post_title            | 0            | SQL  |
+| wp_posts             | post_excerpt          | 0            | SQL  |
+| wp_posts             | post_status           | 0            | SQL  |
+| wp_posts             | comment_status        | 0            | SQL  |
+| wp_posts             | ping_status           | 0            | SQL  |
+| wp_posts             | post_password         | 0            | SQL  |
+| wp_posts             | post_name             | 0            | SQL  |
+| wp_posts             | to_ping               | 0            | SQL  |
+| wp_posts             | pinged                | 0            | SQL  |
+| wp_posts             | post_content_filtered | 0            | SQL  |
+| wp_posts             | guid                  | 0            | SQL  |
+| wp_posts             | post_type             | 0            | SQL  |
+| wp_posts             | post_mime_type        | 0            | SQL  |
+| wp_term_taxonomy     | taxonomy              | 0            | SQL  |
+| wp_term_taxonomy     | description           | 0            | SQL  |
+| wp_termmeta          | meta_key              | 0            | SQL  |
+| wp_termmeta          | meta_value            | 0            | SQL  |
+| wp_terms             | name                  | 0            | SQL  |
+| wp_terms             | slug                  | 0            | SQL  |
+| wp_usermeta          | meta_key              | 0            | SQL  |
+| wp_usermeta          | meta_value            | 0            | PHP  |
+| wp_users             | user_login            | 0            | SQL  |
+| wp_users             | user_nicename         | 0            | SQL  |
+| wp_users             | user_email            | 0            | SQL  |
+| wp_users             | user_url              | 0            | SQL  |
+| wp_users             | user_activation_key   | 0            | SQL  |
+| wp_users             | display_name          | 0            | SQL  |
++----------------------+-----------------------+--------------+------+
+Success: Made 0 replacements.
+ [notice] Command: fse-scholarships.dev -- wp search-replace engineering.asu.edu/factbook/why-students-choose-fulton-engineering engineering.asu.edu/about [Exit: 0]
++----------------------+-----------------------+--------------+------+
+| Table                | Column                | Replacements | Type |
++----------------------+-----------------------+--------------+------+
+| wp_commentmeta       | meta_key              | 0            | SQL  |
+| wp_commentmeta       | meta_value            | 0            | SQL  |
+| wp_comments          | comment_author        | 0            | SQL  |
+| wp_comments          | comment_author_email  | 0            | SQL  |
+| wp_comments          | comment_author_url    | 0            | SQL  |
+| wp_comments          | comment_author_IP     | 0            | SQL  |
+| wp_comments          | comment_content       | 0            | SQL  |
+| wp_comments          | comment_approved      | 0            | SQL  |
+| wp_comments          | comment_agent         | 0            | SQL  |
+| wp_comments          | comment_type          | 0            | SQL  |
+| wp_links             | link_url              | 0            | SQL  |
+| wp_links             | link_name             | 0            | SQL  |
+| wp_links             | link_image            | 0            | SQL  |
+| wp_links             | link_target           | 0            | SQL  |
+| wp_links             | link_description      | 0            | SQL  |
+| wp_links             | link_visible          | 0            | SQL  |
+| wp_links             | link_rel              | 0            | SQL  |
+| wp_links             | link_notes            | 0            | SQL  |
+| wp_links             | link_rss              | 0            | SQL  |
+| wp_options           | option_name           | 0            | SQL  |
+| wp_options           | option_value          | 0            | PHP  |
+| wp_options           | autoload              | 0            | SQL  |
+| wp_pantheon_sessions |                       | skipped      |      |
+| wp_postmeta          | meta_key              | 0            | SQL  |
+| wp_postmeta          | meta_value            | 0            | PHP  |
+| wp_posts             | post_content          | 0            | SQL  |
+| wp_posts             | post_title            | 0            | SQL  |
+| wp_posts             | post_excerpt          | 0            | SQL  |
+| wp_posts             | post_status           | 0            | SQL  |
+| wp_posts             | comment_status        | 0            | SQL  |
+| wp_posts             | ping_status           | 0            | SQL  |
+| wp_posts             | post_password         | 0            | SQL  |
+| wp_posts             | post_name             | 0            | SQL  |
+| wp_posts             | to_ping               | 0            | SQL  |
+| wp_posts             | pinged                | 0            | SQL  |
+| wp_posts             | post_content_filtered | 0            | SQL  |
+| wp_posts             | guid                  | 0            | SQL  |
+| wp_posts             | post_type             | 0            | SQL  |
+| wp_posts             | post_mime_type        | 0            | SQL  |
+| wp_term_taxonomy     | taxonomy              | 0            | SQL  |
+| wp_term_taxonomy     | description           | 0            | SQL  |
+| wp_termmeta          | meta_key              | 0            | SQL  |
+| wp_termmeta          | meta_value            | 0            | SQL  |
+| wp_terms             | name                  | 0            | SQL  |
+| wp_terms             | slug                  | 0            | SQL  |
+| wp_usermeta          | meta_key              | 0            | SQL  |
+| wp_usermeta          | meta_value            | 0            | PHP  |
+| wp_users             | user_login            | 0            | SQL  |
+| wp_users             | user_nicename         | 0            | SQL  |
+| wp_users             | user_email            | 0            | SQL  |
+| wp_users             | user_url              | 0            | SQL  |
+| wp_users             | user_activation_key   | 0            | SQL  |
+| wp_users             | display_name          | 0            | SQL  |
++----------------------+-----------------------+--------------+------+
+Success: Made 0 replacements.
+ [notice] Command: fse-scholarships.dev -- wp search-replace engineering.asu.edu/factbook/data engineering.asu.edu/enrollment [Exit: 0]
++----------------------+-----------------------+--------------+------+
+| Table                | Column                | Replacements | Type |
++----------------------+-----------------------+--------------+------+
+| wp_commentmeta       | meta_key              | 0            | SQL  |
+| wp_commentmeta       | meta_value            | 0            | SQL  |
+| wp_comments          | comment_author        | 0            | SQL  |
+| wp_comments          | comment_author_email  | 0            | SQL  |
+| wp_comments          | comment_author_url    | 0            | SQL  |
+| wp_comments          | comment_author_IP     | 0            | SQL  |
+| wp_comments          | comment_content       | 0            | SQL  |
+| wp_comments          | comment_approved      | 0            | SQL  |
+| wp_comments          | comment_agent         | 0            | SQL  |
+| wp_comments          | comment_type          | 0            | SQL  |
+| wp_links             | link_url              | 0            | SQL  |
+| wp_links             | link_name             | 0            | SQL  |
+| wp_links             | link_image            | 0            | SQL  |
+| wp_links             | link_target           | 0            | SQL  |
+| wp_links             | link_description      | 0            | SQL  |
+| wp_links             | link_visible          | 0            | SQL  |
+| wp_links             | link_rel              | 0            | SQL  |
+| wp_links             | link_notes            | 0            | SQL  |
+| wp_links             | link_rss              | 0            | SQL  |
+| wp_options           | option_name           | 0            | SQL  |
+| wp_options           | option_value          | 0            | PHP  |
+| wp_options           | autoload              | 0            | SQL  |
+| wp_pantheon_sessions |                       | skipped      |      |
+| wp_postmeta          | meta_key              | 0            | SQL  |
+| wp_postmeta          | meta_value            | 0            | PHP  |
+| wp_posts             | post_content          | 0            | SQL  |
+| wp_posts             | post_title            | 0            | SQL  |
+| wp_posts             | post_excerpt          | 0            | SQL  |
+| wp_posts             | post_status           | 0            | SQL  |
+| wp_posts             | comment_status        | 0            | SQL  |
+| wp_posts             | ping_status           | 0            | SQL  |
+| wp_posts             | post_password         | 0            | SQL  |
+| wp_posts             | post_name             | 0            | SQL  |
+| wp_posts             | to_ping               | 0            | SQL  |
+| wp_posts             | pinged                | 0            | SQL  |
+| wp_posts             | post_content_filtered | 0            | SQL  |
+| wp_posts             | guid                  | 0            | SQL  |
+| wp_posts             | post_type             | 0            | SQL  |
+| wp_posts             | post_mime_type        | 0            | SQL  |
+| wp_term_taxonomy     | taxonomy              | 0            | SQL  |
+| wp_term_taxonomy     | description           | 0            | SQL  |
+| wp_termmeta          | meta_key              | 0            | SQL  |
+| wp_termmeta          | meta_value            | 0            | SQL  |
+| wp_terms             | name                  | 0            | SQL  |
+| wp_terms             | slug                  | 0            | SQL  |
+| wp_usermeta          | meta_key              | 0            | SQL  |
+| wp_usermeta          | meta_value            | 0            | PHP  |
+| wp_users             | user_login            | 0            | SQL  |
+| wp_users             | user_nicename         | 0            | SQL  |
+| wp_users             | user_email            | 0            | SQL  |
+| wp_users             | user_url              | 0            | SQL  |
+| wp_users             | user_activation_key   | 0            | SQL  |
+| wp_users             | display_name          | 0            | SQL  |
++----------------------+-----------------------+--------------+------+
+Success: Made 0 replacements.
+ [notice] Command: fse-scholarships.dev -- wp search-replace factbook.engineering.asu.edu/about/the-fulton-difference engineering.asu.edu/about [Exit: 0]
+... updates are available.
+... creating a backup of the code base & database for the live environment.
+... switching to git mode, attempting to apply updates.
+... updates applied to site normally.
+... attempting to deploy code to the test environment.
+ [notice] Deployed code to "test", and cloned files from "live", and cloned database from "live"
+... applying DB changes including Instagram handle switch to the test environment.
+ [warning] This environment is in read-only Git mode. If you want to make changes to the codebase of this site (e.g. updating modules or plugins), you will need to toggle into read/write SFTP mode first.
+ [notice] Command: fse-scholarships.test -- wp search-replace instagram.com/fultonengineering instagram.com/asuengineering [Exit: 0]
+ [warning] This environment is in read-only Git mode. If you want to make changes to the codebase of this site (e.g. updating modules or plugins), you will need to toggle into read/write SFTP mode first.
+ [notice] Command: fse-scholarships.test -- wp search-replace engineering.asu.edu/factbook/why-students-choose-fulton-engineering engineering.asu.edu/about [Exit: 0]
+ [warning] This environment is in read-only Git mode. If you want to make changes to the codebase of this site (e.g. updating modules or plugins), you will need to toggle into read/write SFTP mode first.
+ [notice] Command: fse-scholarships.test -- wp search-replace engineering.asu.edu/factbook/data engineering.asu.edu/enrollment [Exit: 0]
+ [warning] This environment is in read-only Git mode. If you want to make changes to the codebase of this site (e.g. updating modules or plugins), you will need to toggle into read/write SFTP mode first.
+ [notice] Command: fse-scholarships.test -- wp search-replace factbook.engineering.asu.edu/about/the-fulton-difference engineering.asu.edu/about [Exit: 0]
+... attempting to deploy code to the live environment.
+ [notice] Deployed code to "live"
+... applying DB changes including Instagram handle switch to the live environment.
+ [warning] This environment is in read-only Git mode. If you want to make changes to the codebase of this site (e.g. updating modules or plugins), you will need to toggle into read/write SFTP mode first.
+ [notice] Command: fse-scholarships.live -- wp search-replace instagram.com/fultonengineering instagram.com/asuengineering [Exit: 0]
+ [warning] This environment is in read-only Git mode. If you want to make changes to the codebase of this site (e.g. updating modules or plugins), you will need to toggle into read/write SFTP mode first.
+ [notice] Command: fse-scholarships.live -- wp search-replace engineering.asu.edu/factbook/why-students-choose-fulton-engineering engineering.asu.edu/about [Exit: 0]
+ [warning] This environment is in read-only Git mode. If you want to make changes to the codebase of this site (e.g. updating modules or plugins), you will need to toggle into read/write SFTP mode first.
+ [notice] Command: fse-scholarships.live -- wp search-replace engineering.asu.edu/factbook/data engineering.asu.edu/enrollment [Exit: 0]
+ [warning] This environment is in read-only Git mode. If you want to make changes to the codebase of this site (e.g. updating modules or plugins), you will need to toggle into read/write SFTP mode first.
+ [notice] Command: fse-scholarships.live -- wp search-replace factbook.engineering.asu.edu/about/the-fulton-difference engineering.asu.edu/about [Exit: 0]
+Work complete with fse-scholarships.
+
+Working with site 238 of 238: customize
+... applying Instagram handle DB fix to the dev environment.
+Warning: strpos(): Empty needle in /srv/bindings/996faf80616b4de9ad988bfb7eee0c5a/code/wp-content/plugins/divi-builder/core/functions.php on line 577
++----------------------+-----------------------+--------------+------+
+| Table                | Column                | Replacements | Type |
++----------------------+-----------------------+--------------+------+
+| wp_commentmeta       | meta_key              | 0            | SQL  |
+| wp_commentmeta       | meta_value            | 0            | SQL  |
+| wp_comments          | comment_author        | 0            | SQL  |
+| wp_comments          | comment_author_email  | 0            | SQL  |
+| wp_comments          | comment_author_url    | 0            | SQL  |
+| wp_comments          | comment_author_IP     | 0            | SQL  |
+| wp_comments          | comment_content       | 0            | SQL  |
+| wp_comments          | comment_approved      | 0            | SQL  |
+| wp_comments          | comment_agent         | 0            | SQL  |
+| wp_comments          | comment_type          | 0            | SQL  |
+| wp_links             | link_url              | 0            | SQL  |
+| wp_links             | link_name             | 0            | SQL  |
+| wp_links             | link_image            | 0            | SQL  |
+| wp_links             | link_target           | 0            | SQL  |
+| wp_links             | link_description      | 0            | SQL  |
+| wp_links             | link_visible          | 0            | SQL  |
+| wp_links             | link_rel              | 0            | SQL  |
+| wp_links             | link_notes            | 0            | SQL  |
+| wp_links             | link_rss              | 0            | SQL  |
+| wp_options           | option_name           | 0            | SQL  |
+| wp_options           | option_value          | 1            | PHP  |
+| wp_options           | autoload              | 0            | SQL  |
+| wp_pantheon_sessions |                       | skipped      |      |
+| wp_postmeta          | meta_key              | 0            | SQL  |
+| wp_postmeta          | meta_value            | 0            | PHP  |
+| wp_posts             | post_content          | 0            | SQL  |
+| wp_posts             | post_title            | 0            | SQL  |
+| wp_posts             | post_excerpt          | 0            | SQL  |
+| wp_posts             | post_status           | 0            | SQL  |
+| wp_posts             | comment_status        | 0            | SQL  |
+| wp_posts             | ping_status           | 0            | SQL  |
+| wp_posts             | post_password         | 0            | SQL  |
+| wp_posts             | post_name             | 0            | SQL  |
+| wp_posts             | to_ping               | 0            | SQL  |
+| wp_posts             | pinged                | 0            | SQL  |
+| wp_posts             | post_content_filtered | 0            | SQL  |
+| wp_posts             | guid                  | 0            | SQL  |
+| wp_posts             | post_type             | 0            | SQL  |
+| wp_posts             | post_mime_type        | 0            | SQL  |
+| wp_term_taxonomy     | taxonomy              | 0            | SQL  |
+| wp_term_taxonomy     | description           | 0            | SQL  |
+| wp_termmeta          | meta_key              | 0            | SQL  |
+| wp_termmeta          | meta_value            | 0            | SQL  |
+| wp_terms             | name                  | 0            | SQL  |
+| wp_terms             | slug                  | 0            | SQL  |
+| wp_usermeta          | meta_key              | 0            | SQL  |
+| wp_usermeta          | meta_value            | 0            | PHP  |
+| wp_users             | user_login            | 0            | SQL  |
+| wp_users             | user_nicename         | 0            | SQL  |
+| wp_users             | user_email            | 0            | SQL  |
+| wp_users             | user_url              | 0            | SQL  |
+| wp_users             | user_activation_key   | 0            | SQL  |
+| wp_users             | display_name          | 0            | SQL  |
++----------------------+-----------------------+--------------+------+
+Success: Made 1 replacement.
+ [notice] Command: customize.dev -- wp search-replace instagram.com/fultonengineering instagram.com/asuengineering [Exit: 0]
+Warning: strpos(): Empty needle in /srv/bindings/996faf80616b4de9ad988bfb7eee0c5a/code/wp-content/plugins/divi-builder/core/functions.php on line 577
++----------------------+-----------------------+--------------+------+
+| Table                | Column                | Replacements | Type |
++----------------------+-----------------------+--------------+------+
+| wp_commentmeta       | meta_key              | 0            | SQL  |
+| wp_commentmeta       | meta_value            | 0            | SQL  |
+| wp_comments          | comment_author        | 0            | SQL  |
+| wp_comments          | comment_author_email  | 0            | SQL  |
+| wp_comments          | comment_author_url    | 0            | SQL  |
+| wp_comments          | comment_author_IP     | 0            | SQL  |
+| wp_comments          | comment_content       | 0            | SQL  |
+| wp_comments          | comment_approved      | 0            | SQL  |
+| wp_comments          | comment_agent         | 0            | SQL  |
+| wp_comments          | comment_type          | 0            | SQL  |
+| wp_links             | link_url              | 0            | SQL  |
+| wp_links             | link_name             | 0            | SQL  |
+| wp_links             | link_image            | 0            | SQL  |
+| wp_links             | link_target           | 0            | SQL  |
+| wp_links             | link_description      | 0            | SQL  |
+| wp_links             | link_visible          | 0            | SQL  |
+| wp_links             | link_rel              | 0            | SQL  |
+| wp_links             | link_notes            | 0            | SQL  |
+| wp_links             | link_rss              | 0            | SQL  |
+| wp_options           | option_name           | 0            | SQL  |
+| wp_options           | option_value          | 0            | PHP  |
+| wp_options           | autoload              | 0            | SQL  |
+| wp_pantheon_sessions |                       | skipped      |      |
+| wp_postmeta          | meta_key              | 0            | SQL  |
+| wp_postmeta          | meta_value            | 1            | PHP  |
+| wp_posts             | post_content          | 0            | SQL  |
+| wp_posts             | post_title            | 0            | SQL  |
+| wp_posts             | post_excerpt          | 0            | SQL  |
+| wp_posts             | post_status           | 0            | SQL  |
+| wp_posts             | comment_status        | 0            | SQL  |
+| wp_posts             | ping_status           | 0            | SQL  |
+| wp_posts             | post_password         | 0            | SQL  |
+| wp_posts             | post_name             | 0            | SQL  |
+| wp_posts             | to_ping               | 0            | SQL  |
+| wp_posts             | pinged                | 0            | SQL  |
+| wp_posts             | post_content_filtered | 0            | SQL  |
+| wp_posts             | guid                  | 0            | SQL  |
+| wp_posts             | post_type             | 0            | SQL  |
+| wp_posts             | post_mime_type        | 0            | SQL  |
+| wp_term_taxonomy     | taxonomy              | 0            | SQL  |
+| wp_term_taxonomy     | description           | 0            | SQL  |
+| wp_termmeta          | meta_key              | 0            | SQL  |
+| wp_termmeta          | meta_value            | 0            | SQL  |
+| wp_terms             | name                  | 0            | SQL  |
+| wp_terms             | slug                  | 0            | SQL  |
+| wp_usermeta          | meta_key              | 0            | SQL  |
+| wp_usermeta          | meta_value            | 0            | PHP  |
+| wp_users             | user_login            | 0            | SQL  |
+| wp_users             | user_nicename         | 0            | SQL  |
+| wp_users             | user_email            | 0            | SQL  |
+| wp_users             | user_url              | 0            | SQL  |
+| wp_users             | user_activation_key   | 0            | SQL  |
+| wp_users             | display_name          | 0            | SQL  |
++----------------------+-----------------------+--------------+------+
+Success: Made 1 replacement.
+ [notice] Command: customize.dev -- wp search-replace engineering.asu.edu/factbook/why-students-choose-fulton-engineering engineering.asu.edu/about [Exit: 0]
+Warning: strpos(): Empty needle in /srv/bindings/996faf80616b4de9ad988bfb7eee0c5a/code/wp-content/plugins/divi-builder/core/functions.php on line 577
++----------------------+-----------------------+--------------+------+
+| Table                | Column                | Replacements | Type |
++----------------------+-----------------------+--------------+------+
+| wp_commentmeta       | meta_key              | 0            | SQL  |
+| wp_commentmeta       | meta_value            | 0            | SQL  |
+| wp_comments          | comment_author        | 0            | SQL  |
+| wp_comments          | comment_author_email  | 0            | SQL  |
+| wp_comments          | comment_author_url    | 0            | SQL  |
+| wp_comments          | comment_author_IP     | 0            | SQL  |
+| wp_comments          | comment_content       | 0            | SQL  |
+| wp_comments          | comment_approved      | 0            | SQL  |
+| wp_comments          | comment_agent         | 0            | SQL  |
+| wp_comments          | comment_type          | 0            | SQL  |
+| wp_links             | link_url              | 0            | SQL  |
+| wp_links             | link_name             | 0            | SQL  |
+| wp_links             | link_image            | 0            | SQL  |
+| wp_links             | link_target           | 0            | SQL  |
+| wp_links             | link_description      | 0            | SQL  |
+| wp_links             | link_visible          | 0            | SQL  |
+| wp_links             | link_rel              | 0            | SQL  |
+| wp_links             | link_notes            | 0            | SQL  |
+| wp_links             | link_rss              | 0            | SQL  |
+| wp_options           | option_name           | 0            | SQL  |
+| wp_options           | option_value          | 0            | PHP  |
+| wp_options           | autoload              | 0            | SQL  |
+| wp_pantheon_sessions |                       | skipped      |      |
+| wp_postmeta          | meta_key              | 0            | SQL  |
+| wp_postmeta          | meta_value            | 0            | PHP  |
+| wp_posts             | post_content          | 0            | SQL  |
+| wp_posts             | post_title            | 0            | SQL  |
+| wp_posts             | post_excerpt          | 0            | SQL  |
+| wp_posts             | post_status           | 0            | SQL  |
+| wp_posts             | comment_status        | 0            | SQL  |
+| wp_posts             | ping_status           | 0            | SQL  |
+| wp_posts             | post_password         | 0            | SQL  |
+| wp_posts             | post_name             | 0            | SQL  |
+| wp_posts             | to_ping               | 0            | SQL  |
+| wp_posts             | pinged                | 0            | SQL  |
+| wp_posts             | post_content_filtered | 0            | SQL  |
+| wp_posts             | guid                  | 0            | SQL  |
+| wp_posts             | post_type             | 0            | SQL  |
+| wp_posts             | post_mime_type        | 0            | SQL  |
+| wp_term_taxonomy     | taxonomy              | 0            | SQL  |
+| wp_term_taxonomy     | description           | 0            | SQL  |
+| wp_termmeta          | meta_key              | 0            | SQL  |
+| wp_termmeta          | meta_value            | 0            | SQL  |
+| wp_terms             | name                  | 0            | SQL  |
+| wp_terms             | slug                  | 0            | SQL  |
+| wp_usermeta          | meta_key              | 0            | SQL  |
+| wp_usermeta          | meta_value            | 0            | PHP  |
+| wp_users             | user_login            | 0            | SQL  |
+| wp_users             | user_nicename         | 0            | SQL  |
+| wp_users             | user_email            | 0            | SQL  |
+| wp_users             | user_url              | 0            | SQL  |
+| wp_users             | user_activation_key   | 0            | SQL  |
+| wp_users             | display_name          | 0            | SQL  |
++----------------------+-----------------------+--------------+------+
+Success: Made 0 replacements.
+ [notice] Command: customize.dev -- wp search-replace engineering.asu.edu/factbook/data engineering.asu.edu/enrollment [Exit: 0]
+Warning: strpos(): Empty needle in /srv/bindings/996faf80616b4de9ad988bfb7eee0c5a/code/wp-content/plugins/divi-builder/core/functions.php on line 577
++----------------------+-----------------------+--------------+------+
+| Table                | Column                | Replacements | Type |
++----------------------+-----------------------+--------------+------+
+| wp_commentmeta       | meta_key              | 0            | SQL  |
+| wp_commentmeta       | meta_value            | 0            | SQL  |
+| wp_comments          | comment_author        | 0            | SQL  |
+| wp_comments          | comment_author_email  | 0            | SQL  |
+| wp_comments          | comment_author_url    | 0            | SQL  |
+| wp_comments          | comment_author_IP     | 0            | SQL  |
+| wp_comments          | comment_content       | 0            | SQL  |
+| wp_comments          | comment_approved      | 0            | SQL  |
+| wp_comments          | comment_agent         | 0            | SQL  |
+| wp_comments          | comment_type          | 0            | SQL  |
+| wp_links             | link_url              | 0            | SQL  |
+| wp_links             | link_name             | 0            | SQL  |
+| wp_links             | link_image            | 0            | SQL  |
+| wp_links             | link_target           | 0            | SQL  |
+| wp_links             | link_description      | 0            | SQL  |
+| wp_links             | link_visible          | 0            | SQL  |
+| wp_links             | link_rel              | 0            | SQL  |
+| wp_links             | link_notes            | 0            | SQL  |
+| wp_links             | link_rss              | 0            | SQL  |
+| wp_options           | option_name           | 0            | SQL  |
+| wp_options           | option_value          | 0            | PHP  |
+| wp_options           | autoload              | 0            | SQL  |
+| wp_pantheon_sessions |                       | skipped      |      |
+| wp_postmeta          | meta_key              | 0            | SQL  |
+| wp_postmeta          | meta_value            | 0            | PHP  |
+| wp_posts             | post_content          | 0            | SQL  |
+| wp_posts             | post_title            | 0            | SQL  |
+| wp_posts             | post_excerpt          | 0            | SQL  |
+| wp_posts             | post_status           | 0            | SQL  |
+| wp_posts             | comment_status        | 0            | SQL  |
+| wp_posts             | ping_status           | 0            | SQL  |
+| wp_posts             | post_password         | 0            | SQL  |
+| wp_posts             | post_name             | 0            | SQL  |
+| wp_posts             | to_ping               | 0            | SQL  |
+| wp_posts             | pinged                | 0            | SQL  |
+| wp_posts             | post_content_filtered | 0            | SQL  |
+| wp_posts             | guid                  | 0            | SQL  |
+| wp_posts             | post_type             | 0            | SQL  |
+| wp_posts             | post_mime_type        | 0            | SQL  |
+| wp_term_taxonomy     | taxonomy              | 0            | SQL  |
+| wp_term_taxonomy     | description           | 0            | SQL  |
+| wp_termmeta          | meta_key              | 0            | SQL  |
+| wp_termmeta          | meta_value            | 0            | SQL  |
+| wp_terms             | name                  | 0            | SQL  |
+| wp_terms             | slug                  | 0            | SQL  |
+| wp_usermeta          | meta_key              | 0            | SQL  |
+| wp_usermeta          | meta_value            | 0            | PHP  |
+| wp_users             | user_login            | 0            | SQL  |
+| wp_users             | user_nicename         | 0            | SQL  |
+| wp_users             | user_email            | 0            | SQL  |
+| wp_users             | user_url              | 0            | SQL  |
+| wp_users             | user_activation_key   | 0            | SQL  |
+| wp_users             | display_name          | 0            | SQL  |
++----------------------+-----------------------+--------------+------+
+Success: Made 0 replacements.
+ [notice] Command: customize.dev -- wp search-replace factbook.engineering.asu.edu/about/the-fulton-difference engineering.asu.edu/about [Exit: 0]
+... updates are available.
+... creating a backup of the code base & database for the live environment.
+... switching to git mode, attempting to apply updates.
+... updates applied to site normally.
+... attempting to deploy code to the test environment.
+ [notice] Deployed code to "test", and cloned files from "live", and cloned database from "live"
+... applying DB changes including Instagram handle switch to the test environment.
+ [warning] This environment is in read-only Git mode. If you want to make changes to the codebase of this site (e.g. updating modules or plugins), you will need to toggle into read/write SFTP mode first.
+ [notice] Command: customize.test -- wp search-replace instagram.com/fultonengineering instagram.com/asuengineering [Exit: 0]
+ [warning] This environment is in read-only Git mode. If you want to make changes to the codebase of this site (e.g. updating modules or plugins), you will need to toggle into read/write SFTP mode first.
+ [notice] Command: customize.test -- wp search-replace engineering.asu.edu/factbook/why-students-choose-fulton-engineering engineering.asu.edu/about [Exit: 0]
+ [warning] This environment is in read-only Git mode. If you want to make changes to the codebase of this site (e.g. updating modules or plugins), you will need to toggle into read/write SFTP mode first.
+ [notice] Command: customize.test -- wp search-replace engineering.asu.edu/factbook/data engineering.asu.edu/enrollment [Exit: 0]
+ [warning] This environment is in read-only Git mode. If you want to make changes to the codebase of this site (e.g. updating modules or plugins), you will need to toggle into read/write SFTP mode first.
+ [notice] Command: customize.test -- wp search-replace factbook.engineering.asu.edu/about/the-fulton-difference engineering.asu.edu/about [Exit: 0]
+... attempting to deploy code to the live environment.
+ [notice] Deployed code to "live"
+... applying DB changes including Instagram handle switch to the live environment.
+ [warning] This environment is in read-only Git mode. If you want to make changes to the codebase of this site (e.g. updating modules or plugins), you will need to toggle into read/write SFTP mode first.
+ [notice] Command: customize.live -- wp search-replace instagram.com/fultonengineering instagram.com/asuengineering [Exit: 0]
+ [warning] This environment is in read-only Git mode. If you want to make changes to the codebase of this site (e.g. updating modules or plugins), you will need to toggle into read/write SFTP mode first.
+ [notice] Command: customize.live -- wp search-replace engineering.asu.edu/factbook/why-students-choose-fulton-engineering engineering.asu.edu/about [Exit: 0]
+ [warning] This environment is in read-only Git mode. If you want to make changes to the codebase of this site (e.g. updating modules or plugins), you will need to toggle into read/write SFTP mode first.
+ [notice] Command: customize.live -- wp search-replace engineering.asu.edu/factbook/data engineering.asu.edu/enrollment [Exit: 0]
+ [warning] This environment is in read-only Git mode. If you want to make changes to the codebase of this site (e.g. updating modules or plugins), you will need to toggle into read/write SFTP mode first.
+ [notice] Command: customize.live -- wp search-replace factbook.engineering.asu.edu/about/the-fulton-difference engineering.asu.edu/about [Exit: 0]
+Work complete with customize.
+
+Script complete.
+EN4121062:update-062918 tfserwin$

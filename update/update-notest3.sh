@@ -3,9 +3,11 @@
 # Borrows from: https://github.com/mcdwayne/pantheon_sites_from_csv_script_builder
 # Grabs site list from Pantheon and loops through sites based on that.
 
-# Third iteration of this script. See others in the series for better documentation.
+# Third iteration of this script.
+# Adds Automatic GIT Upstream resolution to the actions taken to push updates through.
 
-SITENAMES="$(terminus org:site:list asu-engineering --field="name")"
+## SITENAMES="$(terminus org:site:list asu-engineering --field="name")"
+SITENAMES="fulton-student-council fse-scholarships sierks-lab customize"
 SITEENVS="dev test live"
 
 # iterate through sites
