@@ -1,0 +1,20 @@
+========== KEEP ==============
+LastLogin
+csvsql --query  "SELECT ID, MAX(logintime) AS 'LastLogin' FROM userlog GROUP BY ID;" userlog.csv > userlog-last.csv
+
+Total30
+csvsql --query  "SELECT ID, COUNT(*) as 'Total30' FROM userlog WHERE logintime > '2018-10-20' GROUP BY ID;" userlog.csv > userlog-total30.csv
+
+sitename
+csvsql --query  "SELECT ID, 'semte' as 'sitename' FROM userdetails;" userdetails.csv
+
+===============================
+
+csvsql --query  "SELECT sitename + ', ' AS 'data()' FROM details FOR XML PATH('');" details.csv
+
+SELECT STRING_AGG( ISNULL(sitename, ' '), ',') As sites From details
+SELECT sitename + ', ' AS 'data()' FOR XML PATH('')
+
+SELECT user_email, GROUP_CONCAT(sitename ORDER BY sitename ASC SEPARATOR ', ') AS sites FROM details GROUP BY user_email
+
+
