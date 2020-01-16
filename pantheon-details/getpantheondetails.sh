@@ -35,7 +35,7 @@ SITEENVCOUNT=($SITEENVS)
 echo "Getting information about ${#SITECOUNT[@]} sites and ${#SITEENVCOUNT[@]} environments."
 
 # Preload PLUGREPORT and THEMEREPORT with the correct CSV title rows.
-PANTHEONREPORT="Name,Slug,Created,Framework,Service Level,Upstream,PHP Version\n"
+PANTHEONREPORT="Name,Slug,Created,Framework,Plan,Upstream,Frozen?\n"
 DOMAINREPORT="Name,Domain,Record Type,Recommend Value,Current Value,Status\n"
 
 # iterate through sites
@@ -43,7 +43,7 @@ for thissite in $SITENAMES; do
 
     # This part of the report can happen prior to the environment loop.
     echo "Issuing terminus commands for: $thissite."
-    SITEINFO="$(terminus site:info $thissite --format=csv --fields="label,name,created,framework,service_level,upstream,php_version")"
+    SITEINFO="$(terminus site:info $thissite --format=csv --fields="label,name,created,framework,plan_name,upstream,last_frozen_at")"
 
     # Read lines from output and convert/format as needed. Line count used here to format specific parts of the returned list.
     # SITELABEL = substring from string. Pulls the first entry from the list for the domain report.
@@ -52,10 +52,18 @@ for thissite in $SITENAMES; do
     SITELABEL=""
     while read -r line; do
         test $linecount -eq 1 && ((linecount=linecount+1)) && continue
-        FSEUPSTR="22e323a6-5c25-421e-8163-5805383e2ac4: https://gitlab.com/SteveRyan-ASU/pantheon-upstream-engineering.git"
         PANUPSTR="e8fe8550-1ab9-4964-8838-2b9abdccf4bf: https://github.com/pantheon-systems/WordPress"
-        line=${line//$FSEUPSTR/"FSE Upstream"}
-        line=${line//$PANUPSTR/"Pantheon WP"}
+        PITCHFORK="110611cd-f04f-477b-b908-26a162c11c1f: https://github.com/asuengineering/pantheon-upstream-pitchfork.git"
+        FSDT="54be9969-9f75-4096-927a-ba09f9540c02: https://github.com/asuengineering/pantheon-upstream-fsdt.git"
+        ASUDIVI="17102044-7ee9-420b-bb32-d8231390e89d: https://github.com/asuengineering/pantheon-upstream-asudivi.git"
+        LABSITE="ced4d8aa-4315-45ad-9e49-f335b5e9eeba: https://github.com/asuengineering/pantheon-upstream-faculty.git"
+        STATIC="de858279-cb87-4664-825c-fcb4c2928717: https://github.com/populist/static-html-upstream.git"
+        line=${line//$PANUPSTR/"Pantheon (Default)"}
+        line=${line//$PITCHFORK/"Pitchfork"}
+        line=${line//$FSDT/"FSDT"}
+        line=${line//$ASUDIVI/"ASU Divi"}
+        line=${line//$LABSITE/"ASU Labs"}
+        line=${line//$STATIC/"Static HTML Only"}
         PANTHEONREPORT+="$line\n"
         SITELABEL=$(echo $line| cut -d',' -f 1)
         SYSTEMDOMAIN=$(echo $line| cut -d',' -f 2)

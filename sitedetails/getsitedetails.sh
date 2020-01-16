@@ -36,7 +36,7 @@ SITENAMES="$(terminus org:site:list asu-engineering --field="name")"
 #  - could create an additional loop that could catch multidev environments + dev/test/live.
 #  - also avoids errors due to environments not being initialized yet.
 
-SITEENVS="dev live"
+SITEENVS="live"
 
 # Counting the number of iterations in the whole script.
 SITECOUNT=($SITENAMES)
