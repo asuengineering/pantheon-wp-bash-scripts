@@ -8,12 +8,11 @@
 #  - Use org:site:list for filtering sites within an organization by a tag from the dashboard.
 #  - Create a space separated list of sites if neither of these options will work for you.
 # 
+# SITENAMES="$(terminus site:list --field="name")"
+# SITENAMES="$(terminus org:site:list asu-engineering --tag="core" --field="name")"
+# SITENAMES="nanophotonics nestt"
 
-# SITENAMES="$(terminus org:site:list asu-engineering --tag="schools" --field="name")"
-# SITENAMES="customize-static additive-manufacturing"
-# SITENAMES="$(terminus org:site:list asu-engineering --field="name")"
-
-SITENAMES="$(terminus org:site:list asu-engineering --upstream=54be9969-9f75-4096-927a-ba09f9540c02 --field="name")"
+SITENAMES="$(terminus org:site:list asu-engineering --field="name")"
 
 # The easiest way to get the info here is to declare it.
 # To prevent the script from deploying to the live site, omit "live" from the list below.
@@ -28,18 +27,9 @@ for thissite in $SITENAMES; do
     # check for upstream updates
     echo -e "\nSITE: $thissite"
     
-    # Returns a string. The string may or may not start with a "1" (false converted to string).
-    # If it starts with a 1 (string=false), it's frozen.
-    # If it doesn't contain WordPress, then we can safely skip it.
-    FRAMEWORK="$(terminus site:info $thissite --fields="frozen,framework" --format=string)"
-    
-    if [[ $FRAMEWORK != *"wordpress"* ]]; then
-        echo -e "... this isn't WordPress. Skipping it."
-        continue
-    fi
-
-    if [[ $FRAMEWORK == *"1"* ]]; then
-        echo "... this site is frozen. Skipping it."
+    FRAMEWORK="$(terminus site:info $thissite --field="framework")"
+    if [[ $FRAMEWORK != "wordpress" ]]; then
+        echo -e "... this isn't WordPress. Let's skip it."
         continue
     fi
 
@@ -62,6 +52,10 @@ for thissite in $SITENAMES; do
 
                 # Apply upstream updates
                 terminus upstream:updates:apply $thissite.$thisenv --yes --updatedb --accept-upstream
+
+                # Create backups for live version of the site.
+                # echo -e "...doing the sensible thing & creating a backup of the live environment first."
+                # terminus backup:create $site_name.live --element="all" -q
         
             elif [ -n "$UPSTREAMUPDATES" ]; then
                 echo -e "...Terminus wasn't sure if updates should be applied or not."
@@ -72,8 +66,6 @@ for thissite in $SITENAMES; do
         
         elif [[ "$thisenv" == "test" ]]; then
 
-            UPDATEFLAG=true
-
             echo -e "...deploying code to the $thisenv environment."
             terminus env:deploy $thissite.$thisenv --sync-content --cc --note="Updates deployed via automated bash script."
 
@@ -82,7 +74,8 @@ for thissite in $SITENAMES; do
             UPDATEFLAG=true
 
             echo -e "...doing the sensible thing & creating a backup of the live environment first."
-            terminus backup:create $site_name.live --element="all" -q
+            terminus backup:create $thissite.$thisenv --element="db" -q
+            terminus backup:create $thissite.$thisenv --element="code" -q
 
             echo -e "...deploying code to the $thisenv environment."
             terminus env:deploy $thissite.$thisenv --sync-content --cc --note="Updates deployed via automated bash script."
@@ -92,9 +85,9 @@ for thissite in $SITENAMES; do
     done
 
     if [ "$UPDATEFLAG" = true ]; then
-        echo -e "...no automated testing was done on SITE: $thissite."
-        echo -e "...instead, opening in a browser for human eyeball testing."
-        terminus env:view $thissite.live
+       echo -e "...no automated testing was done on SITE: $thissite."
+       echo -e "...instead, opening in a browser for human eyeball testing."
+       terminus env:view $thissite.live
     fi
     
     echo -e "Work complete with SITE: $thissite"
